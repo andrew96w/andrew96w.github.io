@@ -39,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	header("Location: ../index.php");
 }
 
-$pagetitle = "Сообщение с сайта $sitename";
-$message2 = "Спасибо $name, в ближайшее время мы ответим вам";
+$pagetitle = "Сообщение с сайта";
+$message2 = "Спасибо, в ближайшее время мы ответим вам";
 mail($recipient, $pagetitle, $message2, "Content-type: text/plain; charset=\"utf-8\"\n From: $operator");
 ?>
