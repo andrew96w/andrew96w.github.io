@@ -1,0 +1,373 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Helvetica, Arial, sans-serif;
+	box-sizing: border-box;
+	text-decoration: none !important;
+}
+			/*---Главные стили---*/
+html{
+	font-size: 16px;
+}
+body, html{
+	width: 100%;
+	height: 100%;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+div{
+	box-sizing: border-box;
+}
+.container{
+	position: relative;
+}
+.wrapper{
+	width: 100%;
+	margin: auto;
+	background-color: #efefef;
+}
+.caption{
+	display: block;
+	text-align: right;
+	width: 100%;
+	margin-top: 8px;
+	border-bottom: 2px solid #efefef;
+}
+.colorwhite{
+	background-color: white;
+}
+/*section{
+	height: 3000px;
+}*/
+.clearfix:after{
+	content: '';
+	display: table;
+	width: 100%;
+	clear: both;
+}
+
+.top_header{
+	background-color: rgba(0,0,0,0.7);
+	font-size: 1.2rem;
+	min-height: 100px;
+	padding-top: 10px;
+}
+/*.top_header .logo1 h2{
+	font-size: 3rem;
+	text-transform: uppercase;
+}*/
+.top_header .logo1 img{
+	width: 12em;
+}
+.bt_btn{
+	text-transform: uppercase;
+	padding: 3px;
+	cursor: pointer;
+	margin-bottom: 5px;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+
+header{
+	z-index: 10;
+	/*height: calc(100vw-1px);*/   /*765px;*/
+	color: white;
+	position: relative;
+	background: url("../img/YsYbTEnDiN5.jpg") no-repeat center top / cover;
+/*../img/Background_header6.png*/
+}
+/*-------------BUTTON_UP------------------*/
+.btn-up{
+	position: fixed;
+	bottom: 50px;
+	right: -10%;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #424242;
+	color: #424242;
+	cursor: pointer;
+	background: none;
+	outline: none !important;
+	z-index: 100;
+	transition: 0.4s right;
+}
+.btn-up::before{
+	content: "\f106";
+	position: absolute;
+	font-family: FontAwesome;
+	font-size: 45px;
+	top: -14px;
+	right: 7px;
+}
+.btn-up-active{
+	right: 5%;
+}
+
+
+
+
+/*--------------SECTION_MAIN_MENU----------------------*/
+.menu{
+	background-color: #2d2d2d;
+	min-height: 3.1em;/*50px;*/
+}
+.menu .navbar-toggler{
+	color: white;
+	font-size: 2rem;
+}
+.menu ul{
+	height: 100%;
+}
+.menu li{
+	display: block;
+	position: relative;
+	/*margin-left: 30px;*/
+}
+.menu li a{
+	color: white;
+	display: block;
+	width: 120px;
+	height: 2.85em;/*45px;*/
+	/*overflow: hidden;*/
+	text-align: center;
+}
+#navbar-collapse-1{
+	position: absolute;
+	z-index: 10;
+	top: 3px;
+	left: 55px;
+	background-color: #2d2d2d;
+}
+
+
+nav a.nav-link::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	bottom: -3px;
+	left: 0;
+	background-color: #4b79bb;
+	transform: scaleY(0);
+	transition: 0.2s all ease;
+}
+li.nav-item:hover a.nav-link::after{
+	transform: scaleY(1);
+}
+
+/*----------------SLIDER_AND_BOTTOM-MENU----------*/
+
+/*.container_slider{
+	position: relative;
+	height: 465px;
+}*/
+.slider-prev, .slider-next{
+	font-size: 2rem;
+	/*carousel-control-prev-icon*/
+}
+.carousel-caption a{
+	color: white;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bottom_menu div{
+	padding-top: 10px;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.bottom_header{
+	/*position: absolute;*/
+	bottom: 0;
+	width: 100%;
+	z-index: 10;
+	min-height: 10em;/*150px;*/
+	background-color: rgba(0,0,0,0.7);
+}
+.bottom_header a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+		/*---SECTION_ABOUT---*/
+.section_about{
+	margin-top: 20px;
+}
+.section_about img{
+	width: 100%;
+	min-width: 400px;
+	height: auto;
+	margin-top: 35px;
+}
+.section_about .list_about i{
+	color: #4b79bb;
+}
+
+.step_about{
+	position: relative;
+	margin-bottom: 15px;
+}
+.step_about:hover .i_about{
+	left: 5px;
+	top: 3px;
+}
+.i_about{
+	position: absolute;
+	top: 3px;
+	left: 0;
+	color: #4b79bb;
+	transition: 0.1s all ease;
+}
+.list_about{
+	display: block;
+	margin-left: 35px;
+}
+
+
+.section_about .about_boxes{
+	text-align: center;
+	box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+	color: white;
+	margin-bottom: 15px;
+	background: #459be8; /* Old browsers */
+	background: -moz-linear-gradient(top, #459be8 0%, #2567a2 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #459be8 0%,#2567a2 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #459be8 0%,#2567a2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#459be8', endColorstr='#2567a2',GradientType=0 ); /* IE6-9 */
+	transition-property: transform, box-shadow;
+	transition-duration: 0.5s;
+}
+.section_about .about_boxes p{
+	display: block;
+	margin-top: 30px;
+}
+.section_about .about_boxes:hover{
+	transform: scale(1.1);
+	box-shadow: 5px 15px 15px rgba(0,0,0,0.5);
+}
+
+
+		/*---SECRION_ORDER---*/
+.section_order{
+	height: 250px;
+	position: relative;
+	background: url("../img/YsYbTEnDiN6.jpg") no-repeat center top / cover;
+/*../img/Background_header7.png*/
+}
+.order_box{
+	margin-top: 50px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+}
+.order_box_text{
+	font-size: 1.2rem;
+}
+
+
+		/*---SECTION_KATALOG---*/
+.section_katalog{
+	margin-top: 10px;
+}
+.katalog_item{
+	position: relative;
+}
+.katalog_item h5{
+	text-align: center;
+}
+.katalog_item a{
+	display: block;
+	color: black;
+	max-width: 300px;
+	margin: auto;
+}
+.katalog_item img{
+	width: 100%;
+}
+
+		/*---SECTION_KATALOG-SLIDER---*/
+.item{
+	max-width: 300px;
+	margin: auto;
+}
+.card{
+	margin: 0 10px 0 10px;
+	max-width: 300px;
+}
+.owl-carousel .card{
+	max-width: 300px;
+}
+.item a{
+	display: block;
+	color: black;
+}
+
+		/*---SECTION_FEEDBACK---*/
+.feedback-box span{
+	display: block;
+	float: left;
+	width: 200px;
+}
+.feedback-box input, textarea{
+	border: 1.5px solid #4b79bb;
+	border-radius: 3px;
+}
+.bt_feedback{
+	text-transform: none;
+}
+
+
+
+		/*---FOOTER---*/
+
+
+footer{
+	background: #2D2D2D; 
+}
+footer a{
+	color: #cccccc;
+}
+footer{
+	color: #cccccc;
+}
+footer li:first-child{
+	color: #4b79bb;
+}
+footer li{
+	display: block;
+	margin-top: 5px;
+}
+.footer-logo{
+	font-size: 1.5rem;
+	color: #4b79bb;
+}
+
+
+		/*---MEDIA---*/
+/*@media(max-width: 767px){
+	.container_slider{
+		height: 240px;
+
+	}
+}*/
+@media (max-width: 991px){
+	html{
+		font-size: 12px;
+	}
+}
+@media (min-width: 992px){
+	html{
+		font-size: 16px;
+	}
+}
